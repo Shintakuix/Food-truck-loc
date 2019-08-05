@@ -1,0 +1,60 @@
+<center>
+    <h3>Add a Truck</h3>
+</center>
+
+<br>
+
+<div class="ui centered cards">
+    <div class="card">
+        <div class="content">
+            <form class="ui form create-truck">
+                <div class="field">
+                    <label>Truck Name</label>
+                    <input type="text" id="truckName" name="truckName" placeholder="Joey's Tacos">
+                </div>
+                {{!-- <div class="field">
+        <label>Location</label>
+        <div class="ui selection dropdown">
+            <input type="hidden" name="truckLocation" id="truckLocation">
+            <i class="dropdown icon"></i>
+            <div class="default text">Select a Location</div>
+            <div class="menu">
+                <div class="item" data-value="3">Ballston</div>
+                <div class="item" data-value="2">Crystal City</div>
+                <div class="item" data-value="1">Georgetown</div>
+                <div class="item" data-value="0">District Wharf</div>
+            </div>
+        </div>
+    </div> --}}
+                <label for="truckLocation">Truck Location:</label>
+                <select name="locationDropDown" id="truckLocation">
+                    <option>Ballston</option>
+                    <option>Crystal City</option>
+                    <option>Georgetown</option>
+                    <option>District Wharf</option>
+                </select>
+
+                <div class="field">
+                    <label>Type of Cuisine:</label>
+                    <input type="text" id="cuisineName" name="cuisineName" placeholder="Indian">
+                </div>
+                <div class="field">
+                    <label>Add Dish</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="dish" id="dish" placeholder="Fried Chicken">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="price" id="price" placeholder="10.50">
+                        </div>
+                    </div>
+                </div>
+                <button class="ui button" type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+<br>

@@ -1,0 +1,33 @@
+Presentation:
+
+group introduction
+
+app introduction: Food Truck locator is an application that helps you know what food trucks are parked in especific locations. Food Trucks rotate location every day making it hard to know where they will be before you take a trip to the location.
+
+Our idea for the app is to have the truck owners to update their locations every morning.
+
+with few clicks the user will be able to find out what food trucks are in the nearest or favorite spot.
+
+***PRESENT THE APP***
+
+Future Development:
+
+The app will have a registration page that will allow the owner of a truck or trucks to register and to save or update their information. once the information is saved, the owner only have to log in every morning and select the location (or locations if more than 1 truck) and it will be set for the day.
+
+The idea is to reset the database every day at midnight, so that there are not trucks that were there the prior day to be carry over to the next day.
+
+Technologies used:
+
+-We created our own O R M
+-MySQL
+-JAWSbd
+-Semantic
+-Express
+-Heroku for deployment
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<h2>Add your Dishes</h2>
+
+<form class="create-menu">
+
+    <div class="form-group">
+
+        <label for="truckName">Truck Name:</label>
+        <input type="text" id="truckName" name="truckName">
+
+        <label for="dish">Dish:</label>
+        <input type="text" id="dish" name="dish">
+       
+        <label for="price">Price($):</label>
+        <input type="text" id="price" name="price">
+
+        <button type="submit">Add Dish</button>
+
+    </div>
+    <center><h3>Dishes you added:</h3>
+        
+        {{#each menu}}
+        <p>Dish: {{this.dish_name}}</p>
+        <p>Price: ${{this.dish_price}}</p>
+        {{/each}}
+        </center>
+    
+</form>
+

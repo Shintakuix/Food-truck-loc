@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <center>
+                <h3>These are the trucks in {{ trucks.[0].location }}</h3>
+            </center>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <center>
+                <br>
+                {{#each trucks}}
+
+                <a href="/{{this.location}}/{{this.name}}" class="truckButton" data-id="{{this.name}}"> <button
+                        class=" massive ui secondary basic button">{{this.name}}</button>
+                </a>
+                <br>
+                <br>
+                {{/each}}
+
+            </center>
+        </div>
+    </div>
+
+</div>

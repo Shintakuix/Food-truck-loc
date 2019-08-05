@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <center>
+                <h3>Menu for {{ menu.[0].name }}</h3>
+            </center>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+
+            {{#each menu}}
+
+            <div class="ui centered cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="header">Dish name: {{this.dish_name}}</div>
+                        <div class="meta">Price: ${{this.dish_price}}</div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+</div>
