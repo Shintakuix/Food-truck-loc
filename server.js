@@ -16,9 +16,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var routes = require("./controllers/foodTruck_controller.js");
-
+console.log("butterflies");
 app.use(routes);
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App now listening at localhost:" + PORT);
 });
