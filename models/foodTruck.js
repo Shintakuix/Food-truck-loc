@@ -1,5 +1,5 @@
 var orm = require("../config/orm.js");
-
+//list of functions and parameters used in this app
 var trucks = {
   selectLocations: function(cb) {
     orm.selectLocations("trucks", function(res) {
@@ -24,25 +24,11 @@ var trucks = {
     });
   },
 
-  insertMenu: function(objColVals, condition, cb) {
-    orm.insertMenu("trucks", objColVals, condition, function(res) {
-      cb(res);
-    });
-  },
-
-  showDish: function(cb) {
-    orm.showDish("trucks", function(res) {
-      cb(res);
-    });
-  },
-
   showTruck: function(cb) {
     orm.showTruck("trucks", function(res) {
       cb(res);
     });
-  }
-  
+  }  
 };
-
-
+//Export information
 module.exports = trucks;

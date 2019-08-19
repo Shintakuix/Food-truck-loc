@@ -1,33 +1,11 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
+
+//Wait for DOM to run first before executing the onclick
 $(function () {
-  /* $(".create-menu").on("submit", function(event) {
-  
-    event.preventDefault();
-  
-      var newDish = {
-        truck_name: $("#truckName").val().trim(),
-        dish_name: $("#dish").val().trim(),
-        dish_price: $("#price").val().trim()
-      };
-  
-      // Send the PUT request.
-      $.ajax("/api/menu",{
-        type: "POST",
-        data: newDish
-      }).then(
-        function() {
-          console.log("dish plate posted");
-          console.log(newDish)
-        location.reload();
-          
-        }
-      );
-    }); */
 
   $(".create-truck").on("submit", function (event) {
 
     event.preventDefault();
-
+    //stores information from a form to a variable
     var newTruck = {
       truck_name: $("#truckName").val().trim(),
       truck_location: $("#truckLocation").val().trim(),
@@ -37,9 +15,7 @@ $(function () {
       submitted: false,
       approved: true
     };
-
-
-
+    //sent information from forms to /api/trucks
     $.ajax("/api/trucks", {
       type: "POST",
       data: newTruck
@@ -48,8 +24,8 @@ $(function () {
         console.log("created new Truck");
         console.log(newTruck)
         alert("Your dish was succesfully added");
+        //return false prevents the for from reloading
         return false;
-
       }
     );
   });
